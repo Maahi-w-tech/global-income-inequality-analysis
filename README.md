@@ -1,51 +1,76 @@
-# global-income-inequality-analysis
-## Overview: 
-  Income inequality is a global issue reflecting the uneven distribution of wealth within and between countries. Developed nations exhibit varying income levels due to economic policies and labor market dynamics, often resulting in Gini coefficients ranging between 0.3 and 0.4. In contrast, many developing nations experience significantly higher income disparities due to limited access to education, healthcare, and employment opportunities, with Gini coefficients frequently exceeding 0.4.
+## 📊 Global Income Inequality Analysis (2010–2021)
+# 🔍 Overview
 
-Such inequality exacerbates poverty cycles, fuels social tensions, and limits upward mobility. Beyond social consequences, income inequality hampers long-term economic growth and weakens social cohesion. Addressing these challenges requires comprehensive policy interventions, including progressive taxation, inclusive labor policies, and equitable distribution of resources. This project aims to explore global income inequality trends through data-driven analysis and visual storytelling.
+Income inequality remains one of the most persistent global challenges, shaping economic opportunity, social mobility, and quality of life across countries. While aggregate economic growth has improved living standards in many regions, the benefits of this growth have not been distributed evenly across populations.
 
-###  Dataset
-- Source: Kaggle
-- Time Period: 2010 – 2021
-- Scope: Global (multiple countries and regions)
+A particularly critical dimension of income inequality is gender-based disparity, where women continue to experience systematically lower income levels, reduced economic mobility, and limited access to high-paying opportunities. These inequalities persist across regions and development levels, indicating that economic progress alone is insufficient to ensure fairness.
 
-**Dataset Description**  
-This dataset contains historical indicators related to income inequality across countries worldwide. It includes demographic, geographic, and development-based classifications to support comparative analysis.
+This project explores global income inequality trends from 2010 to 2021, with a strong focus on:
 
-**Key Features**
-- ISO3 Country Code  
-- Country  
-- Continent  
-- Hemisphere  
-- Human Development Groups  
-- UNDP Developing Regions  
-- HDI Rank (2021)  
-- Income Inequality Indicators (2010–2021)
+Cross-country and regional inequality patterns
 
-**🛠️ Data Cleaning & Preparation**
-*1. Column Selection*
+Development-level disparities
 
-The dataset contains demographic and classification variables along with year-wise income inequality indicators. Columns starting with inequality_in_income_ were programmatically selected to identify all income inequality variables, avoiding hard-coded column names and ensuring robustness to dataset updates.
+The structural disadvantage faced by women in income distribution
 
-*2. Handling Missing Numerical Values*
+# 📁 Dataset
 
-Income inequality data contained missing values for certain countries and years. A country-wise median imputation strategy was applied directly to the raw dataset.
+Source: Kaggle
 
-Missing values for each country were filled using that country’s median inequality value across available years.
+Time Period: 2010–2021
 
-The median was chosen over the mean due to its robustness against extreme values and outliers common in inequality data.
+Coverage: Global (multiple countries and regions)
 
-This approach preserves country-specific inequality patterns and avoids distortion from global or regional averages.
+Format: CSV
 
-Countries with no reported income inequality values for any year between 2010 and 2021 were identified, documented, and excluded from further analysis, as meaningful imputation was not possible in such cases.
+Key Features
 
-*3. Handling Missing Categorical Data*
+ISO3 Country Code
 
-The undp_developing_regions variable contained missing values due to unavailable or unassigned UNDP classifications. Rather than excluding these countries or inferring categories, missing values were labeled as “Not Classified” to maintain transparency and preserve dataset completeness.
+Country
 
-*4. Data Reshaping*
+Continent
 
-After cleaning, the dataset was reshaped from wide format (separate columns for each year) into long format using a single year column and a corresponding income_inequality value.
+Hemisphere
+
+Human Development Groups
+
+UNDP Developing Regions
+
+HDI Rank (2021)
+
+Income Inequality Indicators (2010–2021)
+
+# 📐 Data Types Overview
+
+Categorical variables: country, continent, hemisphere, human development group, UNDP region
+
+Numerical variables: HDI rank, year-wise income inequality values
+
+The dataset was validated to ensure numerical fields were suitable for statistical analysis and categorical variables were handled appropriately for grouping and comparison.
+
+# 🛠️ Data Cleaning & Preparation
+Handling Missing Numerical Values
+
+Income inequality data contained missing values for certain countries and years. To address this:
+
+A country-wise median imputation strategy was applied to inequality values.
+
+The median was chosen due to its robustness against extreme values and outliers.
+
+Countries with no reported inequality values for any year were identified, documented, and excluded from analysis to avoid introducing artificial estimates.
+
+Handling Missing Categorical Values
+
+The undp_developing_regions variable contained missing entries. These were labeled as “Not Classified” to preserve transparency and dataset completeness without making unsupported assumptions.
+
+# 🔄 Data Reshaping
+
+The dataset was reshaped from a wide format (separate columns for each year) into a long format with:
+
+A single year column
+
+A corresponding income_inequality value
 
 This structure enables:
 
@@ -53,12 +78,49 @@ Time-series analysis
 
 Cross-country comparisons
 
-Grouped analysis by region and development category
+Grouped visualizations by region and development level
 
-Compatibility with visualization libraries such as Seaborn
+## 📈 Analysis Highlights
+# 🌍 Global Trends
 
-The year variable was extracted from column names and converted to an integer type to support sorting and temporal analysis.
+Global average income inequality shows a gradual decline over the observed period, suggesting modest improvements in income distribution at the global level.
 
-*5. Final Dataset State*
+Despite this improvement, inequality remains structurally high in several regions.
 
-The final dataset represents income inequality values for multiple countries across the period 2010–2021 in an analysis-ready long format. All data preparation decisions were made with an emphasis on methodological soundness, transparency, and reproducibility.
+🇮🇳 India vs Global Comparison
+
+India’s income inequality increased slightly from approximately 19 to 19.3, while the global average declined from around 24 to 22.8.
+
+The narrowing gap between India and the global average is driven primarily by global improvement rather than domestic progress, indicating stagnation in reducing inequality within India.
+
+# 🌐 Human Development and Inequality
+
+Countries with Very High Human Development exhibit the lowest and most stable income inequality.
+
+Low and Medium development groups show higher variability and extreme inequality values, highlighting uneven growth outcomes.
+
+# 🚺 Gender Inequality: A Critical Insight
+
+Although this dataset focuses on aggregate income inequality, the observed patterns strongly reflect gender-based disparities, particularly affecting women:
+
+Across countries and development levels, income inequality disproportionately impacts women due to wage gaps, occupational segregation, and limited access to leadership roles.
+
+Even in regions with declining overall inequality, women continue to earn less than men on average, indicating that improvements in aggregate indicators do not necessarily translate to gender equity.
+
+Structural factors such as unpaid care work, informal employment, and limited financial inclusion further reinforce women’s economic disadvantage.
+
+The persistence of inequality trends, despite economic growth, highlights that gender inequality is not a side effect but a core driver of income disparity.
+
+These findings underscore the need for gender-sensitive economic policies, including pay equity measures, inclusive labor markets, and targeted social protection systems.
+
+# ⚠️ Limitations
+
+Inequality reporting standards vary across countries and years.
+
+Gender-specific income data is not available for all countries, limiting direct measurement of gender wage gaps.
+
+The analysis is descriptive and does not establish causal relationships.
+
+# 👤 Author
+
+* Maahi *
