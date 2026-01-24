@@ -81,37 +81,61 @@ Cross-country comparisons
 Grouped visualizations by region and development level
 
 ## 📈 Analysis Highlights
-# 🌍 Global Trends
+# 🌍 Global Income Inequality Trends
 
-Global average income inequality shows a gradual decline over the observed period, suggesting modest improvements in income distribution at the global level.
+Global income inequality shows a gradual but consistent decline from 2010 to 2021, decreasing from approximately 24 to 22.8.
 
-Despite this improvement, inequality remains structurally high in several regions.
+The downward trend is slow and incremental, indicating that while the world is making progress toward more equitable income distribution, the pace of change remains limited.
 
-🇮🇳 India vs Global Comparison
+The decline becomes more noticeable after the mid-2010s, suggesting that global policy efforts and redistribution mechanisms may have begun yielding modest results in recent years.
 
-India’s income inequality increased slightly from approximately 19 to 19.3, while the global average declined from around 24 to 22.8.
+Despite this improvement, global inequality levels remain structurally high, highlighting the persistence of income disparities worldwide.
 
-The narrowing gap between India and the global average is driven primarily by global improvement rather than domestic progress, indicating stagnation in reducing inequality within India.
+# 🌐 Inequality by Continent
 
-# 🌐 Human Development and Inequality
+Africa exhibits the highest median income inequality along with the widest variation, indicating severe and uneven income distribution across countries.
 
-Countries with Very High Human Development exhibit the lowest and most stable income inequality.
+America also shows relatively high inequality levels with a broad spread, suggesting persistent structural disparities.
 
-Low and Medium development groups show higher variability and extreme inequality values, highlighting uneven growth outcomes.
+Asia demonstrates moderate inequality with comparatively lower variability, though disparities remain significant across countries.
+
+Europe consistently displays the lowest and most stable inequality levels, reflecting stronger redistributive systems and social safety nets.
+
+Oceania shows moderate inequality with limited variability, indicating relatively stable income distribution patterns.
+
+# 🌍 Human Development and Inequality
+
+Countries with Very High Human Development exhibit the lowest median income inequality and the most consistent distributions.
+
+Low, Medium, and High development groups show higher inequality and greater variability, particularly the Medium group, which contains several extreme outliers.
+
+The results indicate a negative relationship between development level and income inequality, where higher human development is generally associated with lower and more stable inequality.
+
+🇮🇳 India in Global Context
+
+India’s income inequality increased slightly from around 19 to 19.3 between 2010 and 2021, showing minimal improvement over time.
+
+During the same period, the global average inequality declined from approximately 24 to 22.8, indicating global progress toward more equitable income distribution.
+
+The narrowing gap between India and the global average is therefore driven primarily by global improvement rather than domestic reduction in inequality.
+
+This contrast highlights that economic growth in India has not translated into meaningful reductions in income inequality.
 
 # 🚺 Gender Inequality: A Critical Insight
 
-Although this dataset focuses on aggregate income inequality, the observed patterns strongly reflect gender-based disparities, particularly affecting women:
+While the dataset captures income inequality at an aggregate level, the observed patterns strongly reflect structural gender-based disparities, with women disproportionately affected across regions and development levels.
 
-Across countries and development levels, income inequality disproportionately impacts women due to wage gaps, occupational segregation, and limited access to leadership roles.
+Continents and development groups exhibiting higher income inequality—particularly Africa, parts of Asia, and low to medium human development countries—are also regions where women face greater economic exclusion, wage gaps, and limited access to stable employment.
 
-Even in regions with declining overall inequality, women continue to earn less than men on average, indicating that improvements in aggregate indicators do not necessarily translate to gender equity.
+Even in regions showing declining overall inequality, such as Europe and some high-development countries, gender pay gaps persist, indicating that reductions in aggregate inequality do not automatically translate into gender equity.
 
-Structural factors such as unpaid care work, informal employment, and limited financial inclusion further reinforce women’s economic disadvantage.
+The stability of inequality trends in countries like India, despite global improvement, suggests that women continue to face systemic barriers including occupational segregation, unpaid care burdens, and lower participation in high-income sectors.
 
-The persistence of inequality trends, despite economic growth, highlights that gender inequality is not a side effect but a core driver of income disparity.
+High outliers in inequality distributions often coincide with economies where women are over-represented in informal or low-paying work, reinforcing gendered income gaps.
 
-These findings underscore the need for gender-sensitive economic policies, including pay equity measures, inclusive labor markets, and targeted social protection systems.
+These findings indicate that gender inequality is not a secondary effect, but a core contributor to income inequality, and that meaningful reductions in inequality require gender-responsive economic policies.
+
+Addressing income inequality therefore demands targeted interventions such as pay equity enforcement, improved access to education and financial services for women, and stronger social protection systems that recognize unpaid and informal labor.
 
 # ⚠️ Limitations
 
